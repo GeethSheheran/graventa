@@ -1,27 +1,18 @@
- 
-import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const About = () => {
-    const { ref: counterRef, inView: counterInView } = useInView({
-        triggerOnce: true,
-        threshold: 0.1,
-    });
-
     return (
-        <div className="about-area-1 space overflow-hidden shape-mockup-wrap" ref={counterRef} id="about-sec">
-            
+        <div className="about-area-1 space overflow-hidden shape-mockup-wrap" id="about-sec">
             <div
                 className="section-animation-shape1-1 shape-mockup animation-infinite background-image"
                 data-bottom="0"
-                style={{ backgroundImage: "url('/assets/img/shape/global-line-shape2.png')", bottom: '0px' }}
+                style={{ backgroundImage: "url('/assets/img/shape/global-line-shape2.png')", bottom: "0px" }}
             ></div>
             <div
                 className="about_shape_1-1 shape-mockup jump-reverse"
                 data-bottom="0"
                 data-right="0"
-                style={{ bottom: '0px', right: '0px' }}
+                style={{ bottom: "0px", right: "0px" }}
             >
                 <img src="/assets/img/normal/about_shape_1-2.png" alt="img" />
             </div>
@@ -34,10 +25,7 @@ const About = () => {
                             </div>
                             <div className="about-counter-wrap jump">
                                 <h3 className="about-counter-number">
-                                    <span className="counter-number">
-                                        12
-                                    </span>
-                                    
+                                    <span className="counter-number">12</span>
                                 </h3>
                                 <p className="about-counter-text">Happy Customers</p>
                                 <div className="about-counter-shape">
@@ -58,29 +46,16 @@ const About = () => {
                                 </span>
                                 <h2 className="sec-title">Your Partner in Construction Excellence</h2>
                                 <p className="sec-text">
-                                With over 10 years of experience, Graventa Constructions delivers high-quality residential, commercial, and industrial projects. Combining modern engineering with practical expertise, we provide sustainable, cost-effective, and durable solutions.
-<br/>
-Focused on quality, safety, and client satisfaction, we don’t just build structures – we build trust, value, and lasting partnerships.
+                                    With over 10 years of experience, Graventa Constructions delivers high-quality
+                                    residential, commercial, and industrial projects. Combining modern engineering
+                                    with practical expertise, we provide sustainable, cost-effective, and durable
+                                    solutions.
+                                    <br />
+                                    Focused on quality, safety, and client satisfaction, we don’t just build structures
+                                    – we build trust, value, and lasting partnerships.
                                 </p>
                             </div>
-                            {/* <div className="checklist mb-35">
-                                <ul>
-                                    <li>
-                                        <img
-                                            src="/assets/img/icon/about-checklsit-icon1-1.svg"
-                                            alt="img"
-                                        />
-                                        Providing Solutions For Construction, Management
-                                    </li>
-                                    <li>
-                                        <img
-                                            src="/assets/img/icon/about-checklsit-icon1-1.svg"
-                                            alt="img"
-                                        />
-                                        Engineers design and build the structure
-                                    </li>
-                                </ul>
-                            </div> */}
+
                             <div className="about-grid-wrap">
                                 <div className="icon">
                                     <img src="/assets/img/icon/about-grid-icon1-1.svg" alt="img" />
@@ -88,7 +63,8 @@ Focused on quality, safety, and client satisfaction, we don’t just build struc
                                 <div className="about-grid-details">
                                     <h4 className="title">Our Mission</h4>
                                     <p className="text">
-                                    To deliver safe, innovative, and sustainable construction solutions that exceed expectations, foster lasting trust, and contribute to Sri Lanka’s progress.
+                                        To deliver safe, innovative, and sustainable construction solutions that exceed
+                                        expectations, foster lasting trust, and contribute to Sri Lanka’s progress.
                                     </p>
                                 </div>
                             </div>
@@ -99,7 +75,8 @@ Focused on quality, safety, and client satisfaction, we don’t just build struc
                                 <div className="about-grid-details">
                                     <h4 className="title">Our Vision</h4>
                                     <p className="text">
-                                    To be a leading construction partner in Sri lanka that transforms spaces into enduring landmarks, driven by innovation, quality, and sustainability.
+                                        To be a leading construction partner in Sri Lanka that transforms spaces into
+                                        enduring landmarks, driven by innovation, quality, and sustainability.
                                     </p>
                                 </div>
                             </div>
